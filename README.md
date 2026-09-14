@@ -6,21 +6,13 @@ Welcome to my learning journey.
 
 Basically, I’m learning how the "magic" works so I don't have to rely on a wand.
 
----
-
-## Tech Stack & Environment
-This repository uses a **Multi-package Workspace** managed by [uv](https://docs.astral.sh), the extremely fast Python package manager.
-
-- **Language:** Python 3.13+
-- **Environment:** uv Workspaces
-- **IDEs:** PyCharm / VS Code / Jupyter
 
 ---
 
 ## Project Roadmap
 
 ### Course Labs (`projects/course_labs`)
-*Core mathematical implementations learnt from the Stanford University Specialization course.*
+*Core mathematical implementations learnt from the Stanford University Specialization courseuv add .*
 
 - [x] **Linear Regression (Single Variable):** Cost functions & Gradient Descent.
 - [x] **Multiple Linear Regression:** Vectorized Gradient Descent & Feature Scaling.
@@ -35,7 +27,7 @@ This repository uses a **Multi-package Workspace** managed by [uv](https://docs.
 | Status | Phase | Dataset | Type | Concepts | Misc Learning | Project Link |
 | :---: | :---: | :--- | :---: |:---------------------------|:-------------------------------------| :--- |
 | [x] | **I** | Student Performance | Reg | Gradient Descent Basics    | Simple linear correlation            | [View Code](./projects/linear-regression/student-performance) |
-| [x] | **I** | Medical Insurance | Reg | Categorical Variables      | Converting "Smoker" to 0/1           | [View Code](./projects/linear-regression/medical-insurance-prediction) |
+| [x] | **I** | Medical Insurance | Reg | Categorical Variables      | Converting "Smoker" to 0/1           | [View Code](.projects/linear-regression/medical_insurance_prediction/medical-insurance-cost.ipynb) |
 | [ ] | **I** | Ames Housing Data | Reg | Feature Engineering        | Handling skewness & missing data     | [View Code](./projects/linear-regression/ames-housing) |
 | [ ] | **II** | [Iris Flower](https://www.kaggle.com) | Class | **Binary vs. Multi-class** | Implementing One-vs-Rest logic       | [View Code](./projects/classification/iris-flower) |
 | [ ] | **II** | [Titanic Disaster](https://www.kaggle.com) | Class | **Data Imputation**        | Filling missing Age/Cabin values     | [View Code](./projects/classification/titanic-survival) |
