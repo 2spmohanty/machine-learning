@@ -13,3 +13,4 @@ uv.lock
 # Data
 *.csv
 *.ipynb_checkpoints/
+walk.py
