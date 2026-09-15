@@ -14,3 +14,5 @@ uv.lock
 *.csv
 *.ipynb_checkpoints/
 walk.py
+
+kaggle-datasets.md
