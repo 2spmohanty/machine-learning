@@ -14,6 +14,7 @@ dependencies = [
     "jupyter",
     "scikit-learn",
     "cachetools>=7.0.5",
+    "seaborn>=0.13.2",
 ]
 
 [build-system]
