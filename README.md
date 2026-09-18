@@ -1,4 +1,4 @@
-# Namaskaar !!
+# Hi !!
 
 Welcome to my learning journey. 
 
