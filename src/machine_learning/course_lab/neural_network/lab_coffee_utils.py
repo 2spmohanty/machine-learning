@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.activations import sigmoid
 from matplotlib import cm
 import matplotlib.colors as colors
-from lab_utils_common import dlc
+from machine_learning.course_lab.neural_network.lab_utils_common import dlc
 
 def load_coffee_data():
     """ Creates a coffee roasting data set.
@@ -79,7 +79,11 @@ def plt_layer(X,Y,W1,b1,norm_l):
     Y = Y.reshape(-1,)
     fig,ax = plt.subplots(1,W1.shape[1], figsize=(16,4))
     for i in range(W1.shape[1]):
-        layerf= lambda x : sigmoid(np.dot(norm_l(x),W1[:,i]) + b1[i])
+        #layerf= lambda x : sigmoid(np.dot(norm_l(x),W1[:,i]) + b1[i])
+        """norm_l(x).numpy().squeeze(): Converts the TensorFlow normalization layer output into a clean, flat 1D NumPy array.float(...): Ensures that whatever the sigmoid function outputs is explicitly converted into a standard Python scalar, preventing Matplotlib from getting a sequence.
+        """
+        layerf = lambda x : float(sigmoid(np.dot(norm_l(x).numpy().squeeze(), W1[:,i]) + b1[i]))
+
         plt_prob(ax[i], layerf)
         ax[i].scatter(X[Y==1,0],X[Y==1,1], s=70, marker='x', c='red', label="Good Roast" )
         ax[i].scatter(X[Y==0,0],X[Y==0,1], s=100, marker='o', facecolors='none', 
@@ -137,7 +141,9 @@ def plt_output_unit(W,b):
         for j in range(steps):
             for k in range(steps):
                 v = np.array([x[i,j,k],y[i,j,k],z[i,j,k]])
-                d[i,j,k] = tf.keras.activations.sigmoid(np.dot(v,W[:,0])+b).numpy()
+                #d[i,j,k] = tf.keras.activations.sigmoid(np.dot(v,W[:,0])+b).numpy()
+                d[i,j,k] = float(tf.keras.activations.sigmoid(np.dot(v, W[:, 0]) + b).numpy().item())
+
     pcm = ax.scatter(x, y, z, c=d, cmap=cmap, alpha = 1 )
     ax.set_xlabel("unit 0"); 
     ax.set_ylabel("unit 1"); 
