@@ -10,7 +10,7 @@ Basically, I'm learning how the "magic" works so I don't have to rely on a wand.
 
 ## Project Roadmap
 
-### Course Labs (`projects/course_labs`)
+### 1. Course Labs (`projects/course_labs`)
 
 *Core mathematical implementations learnt from the Stanford University Specialization course.*
 
@@ -18,7 +18,7 @@ Basically, I'm learning how the "magic" works so I don't have to rely on a wand.
 - [x] **Multiple Linear Regression:** Vectorized Gradient Descent & Feature Scaling.
 - [x] **Logistic Regression:** Sigmoid, Decision Boundaries, Logistic Loss & Cost.
 
-### Kaggle Challenges 
+### 2. Kaggle Challenges 
 
 *Applying course theory to real-world datasets.*
 
