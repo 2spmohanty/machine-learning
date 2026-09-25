@@ -25,7 +25,7 @@ Basically, I'm learning how the "magic" works so I don't have to rely on a wand.
 | Status |  Phase  | Dataset | Type | Concepts | Misc Learning | Project Link                                                                                        |
 | :---: |:-------:| :--- | :---: |:---------------------------|:-------------------------------------|:----------------------------------------------------------------------------------------------------|
 | [x] | **1.1** | Medical Insurance Cost | Reg | Categorical encoding, feature scaling, interaction terms | Smoker×BMI interaction feature lifted R² from 0.75 → 0.865; RMSE/MAE gap as an outlier diagnostic | [View Code](./projects/linear-regression/medical_insurance_prediction/medical-insurance-cost.ipynb) |
-| [x] | **1.2** | Pima Indians Diabetes | Class | Logistic regression, sigmoid, decision boundaries, class-imbalance baseline | 65% naive baseline (majority class) vs 77.3% model accuracy; near-identical train/test accuracy as a no-overfitting signal | [View Code](.projects/logistic-regression/Pima-Indians-Diabetes.ipynb)                      |
+| [x] | **1.2** | Pima Indians Diabetes | Class | Logistic regression, sigmoid, decision boundaries, class-imbalance baseline | 65% naive baseline (majority class) vs 77.3% model accuracy; near-identical train/test accuracy as a no-overfitting signal | [View Code](./projects/logistic-regression/Pima-Indians-Diabetes.ipynb)                             |
 
 ---
 
