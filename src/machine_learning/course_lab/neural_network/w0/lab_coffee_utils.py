@@ -5,7 +5,7 @@ import tensorflow as tf
 from tensorflow.keras.activations import sigmoid
 from matplotlib import cm
 import matplotlib.colors as colors
-from machine_learning.course_lab.neural_network.lab_utils_common import dlc
+from machine_learning.course_lab.neural_network.w0.lab_utils_common import dlc
 
 def load_coffee_data():
     """ Creates a coffee roasting data set.

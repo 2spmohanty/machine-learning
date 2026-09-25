@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 plt.style.use('./deeplearning.mplstyle')
 from matplotlib import cm
 import matplotlib.colors as colors
-from machine_learning.course_lab.neural_network.lab_utils_common import dlc
+from machine_learning.course_lab.neural_network.w0.lab_utils_common import dlc
 
 def plt_prob_1d(ax,fwb):
     """ plots a decision boundary but include shading to indicate the probability """
